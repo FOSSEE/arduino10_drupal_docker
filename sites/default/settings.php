@@ -786,11 +786,11 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => '<database_name>',
-  'username' => '<your_username>',
-  'password' => '<your_password>',
+  'database' => getenv('ENV_DB'),
+  'username' => getenv('ENV_USR'),
+  'password' => getenv('ENV_PSWD'),
   'prefix' => '',
-  'host' => '<host_ip>',
+  'host' => getenv('ENV_HOST'),
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
