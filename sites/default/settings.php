@@ -797,3 +797,6 @@ $databases['default']['default'] = array (
 );
 $settings['state_cache'] = TRUE;
 $settings['config_sync_directory'] = 'sites/default/files/config_vq1B607jBFA3Twi2DHiSFERzkR5tSP9zI4_ngAhzP3lfeMD8Cv1ZBvE9iEhxX0iknVTUYS_9EQ/sync';
+
+$config['system.performance']['js']['preprocess'] = FALSE;
+$config['system.performance']['css']['preprocess'] = FALSE;
