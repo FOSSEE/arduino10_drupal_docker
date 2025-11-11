@@ -30,7 +30,6 @@
         "drupal/jquery_ui_draggable": "^2.1",
         "drupal/libraries": "^4.0",
         "drupal/matomo": "^1.19",
-        "drupal/pathologic": "^2.0@alpha",
         "drupal/scheduled_maintenance": "^2.0",
         "drupal/spambot": "^1.2",
         "drupal/superfish": "^1.7",
