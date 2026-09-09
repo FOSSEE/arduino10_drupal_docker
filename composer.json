@@ -16,27 +16,25 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/book": "^2.0@alpha",
-        "drupal/ckeditor": "^1.0",
-        "drupal/colorbox": "^2.1",
-        "drupal/core-composer-scaffold": "^10.0",
-        "drupal/core-project-message": "^10.0",
-        "drupal/core-recommended": "^10.0",
+        "drupal/book": "^2.0",
+        "drupal/ckeditor5_plugin_pack": "^1.5",
+        "drupal/ckeditor_accordion": "^2.3",
+        "drupal/colorbox": "^2.2",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
         "drupal/core-vendor-hardening": "^10.0",
-        "drupal/flexslider": "^3.0@alpha",
+        "drupal/flexslider": "^3.0",
         "drupal/git_deploy": "^2.6",
-        "drupal/google_tag": "^1.7",
+        "drupal/google_tag": "^2.0",
         "drupal/jquery_ui": "^1.7",
         "drupal/jquery_ui_draggable": "^2.1",
         "drupal/libraries": "^4.0",
-        "drupal/matomo": "^1.19",
-        "drupal/nava": "^1.0",
-        "drupal/scheduled_maintenance": "^2.0",
+        "drupal/matomo": "^1.26",
         "drupal/spambot": "^1.2",
-        "drupal/superfish": "^1.7",
-        "drupal/views_dates": "2.x-dev@dev",
-        "drupal/xmlsitemap": "^1.1",
-        "drush/drush": "^12.5"
+        "drupal/superfish": "^1.15",
+        "drupal/xmlsitemap": "^2.0",
+        "drush/drush": "^13.7"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -46,11 +44,14 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
+            "php-http/discovery": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "symfony/runtime": true,
+            "tbachert/spi": true
         },
         "sort-packages": true
     },
@@ -110,5 +111,12 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "^11",
+        "mglaman/phpstan-drupal": "*",
+        "phpstan/extension-installer": "*",
+        "phpstan/phpstan": "*",
+        "phpstan/phpstan-deprecation-rules": "*"
     }
 }
